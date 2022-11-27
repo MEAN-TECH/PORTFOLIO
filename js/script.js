@@ -14,5 +14,12 @@ $(document).ready(function () {
       $('.blog-nav').removeClass("sticky");
     }
   });
+
+  // toggle menu/navbar script
+  $('.menu-btn').click(function(){
+    $('.navbar ul').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
+  });
+
 });
 

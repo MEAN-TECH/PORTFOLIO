@@ -14,7 +14,9 @@ html{
   top:0;
 }
 
-
+.menu-btn {
+  display: none;
+}
 
 span {
   color: #f9004d;
@@ -521,6 +523,53 @@ h5 {
   background: #101010;
 }
 
+/* Media Queries */
 
+@media (min-width: 350px) and ( max-width: 900px ) {
+  .about-img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .max-width{
+    padding: 0 50px;
+  }
+
+  .btn {
+    display: none;
+    z-index: 999;
+  }
+
+  .menu-btn i.active:before {
+    content: '\f00d';
+  }
+
+  .menu-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f9004d;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+
+  .navbar {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
 
 
